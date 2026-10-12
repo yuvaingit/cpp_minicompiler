@@ -82,18 +82,3 @@ Result
 - `src/main.cpp` — command-line REPL
 - `tests/manual_tests.txt` — manual test cases
 
-## Current limitations
-
-This is an educational mini compiler, not a replacement for GCC or LLVM. It supports integer expressions only; it does not compile C++ source code, optimize machine code, or emit native executables. Integer overflow is not checked.
-
-## Suggested next improvements
-
-1. Add variables and assignment.
-2. Add comparison operators and `if` expressions.
-3. Add automated unit tests.
-4. Add constant-folding optimization (for example, compile `2 + 3` to `PUSH 5`).
-5. Add source spans and clearer diagnostics.
-
-## Interview topics to prepare
-
-Be ready to explain the lexer/parser/AST/code-generation stages, recursive descent, operator precedence, why multiplication binds more tightly than addition, stack-machine execution, and how you tested invalid input.
